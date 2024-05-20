@@ -11,14 +11,13 @@ import Typography from '@mui/material/Typography'
 function Card({ card }) {
 
   const shouldShowCardActions = () => {
-    return card?.memberIds?.length || card?.comments?.length || card?.attachments?.length
+    return !!card?.memberIds?.length || !!card?.comments?.length || !!card?.attachments?.length
   }
   return (
     <MuiCard sx={{
       cursor: 'pointer',
       boxShadow: '0 1px 1px rgba(0, 0, 0, 0.2)',
       overflow: 'unset'
-
     }}>
       {card?.cover &&
       <CardMedia sx={{ height: 140 }} image={card?.cover} />}
@@ -26,6 +25,7 @@ function Card({ card }) {
         <Typography>{card?.title}</Typography>
       </CardContent>
       {shouldShowCardActions() &&
+
       <CardActions sx={{ p: '0 4px 8px 4px' }}>
         {!!card?.memberIds?.length &&
       <Button size="small" startIcon={<GroupIcon />}>{card?.memberIds?.length}</Button>
