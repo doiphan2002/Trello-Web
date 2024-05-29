@@ -101,7 +101,7 @@ function BoardBar({ board }) {
         >
           <Tooltip title="doiphandev">
             <Avatar alt="Remy Sharp"
-              src='https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/416123341_3546985152210005_132999661123733663_n.jpg?stp=dst-jpg_p200x200&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2z-1VrMkooQ7kNvgHmKutN&_nc_oc=Adg_gvHKMqXfYBi5cajHLuDjewI_jxR6fvFOa29C70wn6fF5XBxXWqMpZGhWW4S0McZIfZbSuQqIjsFjSills2cb&_nc_ht=scontent.fsgn5-14.fna&oh=00_AYDIAOd-WrTYofA6klkWLMkdDSwKQN4HYl53K8ZrhHAsIA&oe=664A3EF5' />
+               />
           </Tooltip>
 
           <Tooltip title="doiphandev">

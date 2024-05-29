@@ -50,8 +50,9 @@ function BoardContent({ board }) {
 
 
   useEffect(() => {
-    setOrderedColumns(mapOrder(board?.columns, board?.columnOrderIds, '_id'))
+    setOrderedColumns(board.columns) // (mapOrder(board?.columns, board?.columnOrderIds, '_id'))
   }, [board])
+
   // Tìm một cái Column theo CardId
   const findColumnByCardId = (cardId) => {
     return orderedColumns.find(column => column.cards.map(card => card._id)?.includes(cardId))
